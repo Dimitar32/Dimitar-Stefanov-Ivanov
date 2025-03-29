@@ -1,0 +1,47 @@
+.contact {
+    background-color: #252526;
+    color: #d4d4d4;
+    padding: 40px 30px;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  h2 {
+    color: #6a9955;
+    margin-bottom: 20px;
+  }
+  
+  .success {
+    color: #b5cea8;
+    margin-bottom: 15px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+  
+  input,
+  textarea {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    padding: 10px;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  button {
+    background-color: #0e639c;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1177bb;
+  }
+  

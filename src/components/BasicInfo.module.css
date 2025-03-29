@@ -1,0 +1,41 @@
+.info {
+  background-color: #252526;
+  color: #d4d4d4;
+  padding-left: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-family: 'Fira Code', monospace;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #3c3c3c;
+}
+
+.details {
+  flex: 1;
+  min-width: 280px;
+}
+
+.label {
+  color: #569cd6;
+}
+
+a {
+  color: #ce9178;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

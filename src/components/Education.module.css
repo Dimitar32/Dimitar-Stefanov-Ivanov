@@ -1,0 +1,26 @@
+.education {
+    background-color: #252526;
+    color: #d4d4d4;
+    padding: 40px 30px;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  h2 {
+    color: #6a9955;
+    margin-bottom: 20px;
+  }
+  
+  .entry {
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    color: #9cdcfe;
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+    color: #c586c0;
+  }
+  
