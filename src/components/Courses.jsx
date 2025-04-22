@@ -8,13 +8,19 @@ function Courses() {
 
       <ul className={styles.list}>
         <li>
-          <span className={styles.courseTitle}>Java Development Fundamentals</span> – Infinno Internal Training
+          <span className={styles.courseTitle}>Math Concepts for Developers 2025</span> – SoftUni
         </li>
         <li>
-          <span className={styles.courseTitle}>SQL for Data Management</span> – Udemy
+          <span className={styles.courseTitle}>Algorithms with Python 2024</span> – SoftUni
         </li>
         <li>
-          <span className={styles.courseTitle}>Object-Oriented Programming (OOP)</span> – University Curriculum
+          <span className={styles.courseTitle}>.NET Core 8 with MS SQL 2024</span> – Udemy
+        </li>
+        <li>
+          <span className={styles.courseTitle}>SQL (Advanced) 2023</span> – HackerRank
+        </li>
+        <li>
+          <span className={styles.courseTitle}>Java (Basic) 2023</span> – HackerRank
         </li>
       </ul>
     </section>

@@ -7,13 +7,15 @@ function Education() {
       <h2>{'// Education'}</h2>
 
       <div className={styles.entry}>
-        <h3>Plovdiv University “Paisii Hilendarski”</h3>
-        <p className={styles.subtitle}>4th Year Student – Informatics</p>
+        <h3>University of Plovdiv “Paisii Hilendarski”</h3>
+        <p className={styles.subtitle}>Barchelor Degree – Informatics</p>
+        <p className={styles.date}>September 2021 – July 2025</p>
       </div>
 
       <div className={styles.entry}>
         <h3>School of Maths and Science “Geo Milev”, Stara Zagora</h3>
         <p className={styles.subtitle}>Secondary Education – Informatics</p>
+        <p className={styles.date}>September 2013 – May 2021</p>
       </div>
     </section>
   );

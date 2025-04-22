@@ -11,7 +11,7 @@ function Experience() {
         <p className={styles.date}>July 2023 – Present</p>
         <ul>
           <li>Designed, implemented and optimized complex SQL Server procedures and functions.</li>
-          <li>Created and optimized database tables, views, and indexes.</li>
+          <li>Created and optimized database tables, views and indexes.</li>
           <li>Resolved performance issues and optimized queries.</li>
           <li>Developed SSRS reports for data visualization.</li>
           <li>Used Git for version control and collaboration.</li>

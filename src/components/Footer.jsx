@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>&copy; {new Date().getFullYear()} Dimitar Ivanov</p>
-      <p>{'// built with React + ❤️ + ☕'}</p>
+      <p>{'// built with React'}</p>
     </footer>
   );
 }
