@@ -35,6 +35,13 @@ function BasicInfo() {
             <p><span className={styles.label}>Age:</span> {age} years</p>
             <p><span className={styles.label}>Location:</span> Sofia, Bulgaria</p>
             <p><span className={styles.label}>Interests:</span> Programming · Database · AI · Football</p>
+            <a
+                href='/DimitarIvanovCV.pdf' // Adjust the path to your CV file
+                download
+                className={styles.downloadButton}
+            >
+                Download CV
+            </a>
             </div>
         </div>
         </section>

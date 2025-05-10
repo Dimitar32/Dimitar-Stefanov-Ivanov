@@ -39,3 +39,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.downloadButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #569cd6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #4178a9;
+}
