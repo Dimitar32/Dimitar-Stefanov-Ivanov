@@ -9,8 +9,8 @@ function Courses() {
   return (
     <section className={styles.courses} id="courses">
       <div className={styles.header}>
-        <p className={styles.eyebrow}>{t('courses.eyebrow')}</p>
-        <h2>{t('courses.title')}</h2>
+        <h2 className={styles.eyebrow}>{t('courses.eyebrow')}</h2>
+        {/* <h2>{t('courses.title')}</h2> */}
       </div>
 
       <div className={styles.grid}>
