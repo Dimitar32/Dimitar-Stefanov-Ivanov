@@ -35,7 +35,7 @@ function BasicInfo() {
         </div>
 
         <div className={styles.details}>
-          <p className={styles.eyebrow}>{t('basic.hello')}</p>
+          {/* <p className={styles.eyebrow}>{t('basic.hello')}</p> */}
           <h1 className={styles.title}>{t('basic.title')}</h1>
           <p className={styles.lead}>
             {t('basic.lead')}

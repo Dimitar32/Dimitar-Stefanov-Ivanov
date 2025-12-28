@@ -17,7 +17,7 @@ export const strings = {
       hello: 'Здравей, аз съм',
       title: 'Dimitar Stefanov Ivanov',
       lead:
-        'Софтуерен инженер, който изгражда надеждни .NET API-та, оптимизира SQL и автоматизира данни и репорти. Работя с реални бизнес процеси и ценя ясната архитектура.',
+        'Data Engineer и SQL database developer с опит в database design, оптимизации, ETL/ELT и автоматизации на данни/репорти. Работя върху ясна архитектура, надеждни .NET услуги и SQL оптимизации. Преподавам уроци по математика и програмиране.',
       location: 'София, България',
       age: (years) => `${years} години`,
       buttons: {
@@ -32,22 +32,22 @@ export const strings = {
       },
     },
     about: {
-      eyebrow: 'About',
-      title: 'Building reliable backends and data flows.',
+      eyebrow: 'За мен',
+      title: 'Стабилни бекенди и потоци от данни.',
       body:
         'Аз съм Dimitar Ivanov – софтуерен инженер, фокусиран върху .NET, SQL и изграждане на надеждни бекенд системи. Харесвам данни, автоматизации и чист код. Работя по API-та, оптимизация на заявки и интеграции с реални бизнес процеси. В момента базиран в София.',
       tags: ['.NET 8', 'MS SQL / PostgreSQL', 'EF Core', 'CI/CD', 'FastAPI'],
     },
     experience: {
-      eyebrow: 'Experience',
-      title: 'Shipping production features with clear processes.',
+      eyebrow: 'Опит',
+      title: 'Реализации в продукция с ясни процеси.',
       items: [
         {
           title: 'Data Engineer & SQL Developer',
           company: 'Inspirit LTD',
           period: 'октомври 2025 – сега',
           bullets: [
-            'SQL Server development.',
+            'SQL Server development, T-SQL и дизайн на бази.',
             'Оптимизация на заявки, индекси и execution plans.',
             'SSIS data flows и SSRS репорти (schedule, delivery).',
             'ETL / ELT процеси за аналитика и репорти.',
@@ -58,7 +58,7 @@ export const strings = {
           company: 'eDynamix LTD',
           period: 'юли 2023 – септември 2025',
           bullets: [
-            'SQL Server development: T-SQL, stored procedures, функции, тригери.',
+            'SQL Server: T-SQL, stored procedures, функции, тригери.',
             'REST API заявки към външни системи и интеграции.',
             'SSRS репорти, оптимизация на заявки и индекси.',
           ],
@@ -69,14 +69,14 @@ export const strings = {
           period: 'юли 2022 – ноември 2022',
           bullets: [
             'OOP с Java, основи на SQL и REST API.',
-            'Изграждане на малки услуги и свързване към бази данни.',
-            'Практика с екипни процеси и code reviews.',
+            'Малки услуги и свързване към бази данни.',
+            'Екипни процеси и code reviews.',
           ],
         },
       ],
     },
     education: {
-      eyebrow: 'Education',
+      eyebrow: 'Образование',
       title: 'Стъпки в образованието и специализацията.',
       items: [
         {
@@ -129,45 +129,77 @@ export const strings = {
       ],
     },
     courses: {
-      eyebrow: 'Courses I teach',
-      title: '????????? ????? ?? ???????????? ? ????????.',
-      cta: '??? ???????',
+      eyebrow: 'Курсове, които преподавам',
+      title: 'Практични уроци за разработчици и инженери.',
+      cta: 'Виж детайли',
       items: [
-        {
-          title: '????????? ?????',
-          year: 'Soon',
-          org: '',
-          summary: '????? ?? ?????? ????????? ???.',
-          link: '#',
-        },
+        { title: 'Java: от начало до Advanced', year: '2025', org: '', summary: 'Основи на Java, ООП, колекции, нишки, REST, ORM.', link: '#' },
+        { title: 'C#: от начало до Advanced', year: '2025', org: '', summary: 'Синтаксис, ООП, LINQ, async/await, .NET практики.', link: '#' },
+        { title: 'SQL: от начало до Advanced', year: '2025', org: '', summary: 'SELECT, JOIN, индекси, window функции, оптимизация.', link: '#' },
+        { title: 'Училищна математика', year: '2025', org: '', summary: 'Алгебра, геометрия, функции и подготовка за изпити.', link: '#' },
+        { title: 'Висша математика', year: '2025', org: '', summary: 'Линейна алгебра, анализ, вероятности и приложна математика.', link: '#' },
+        { title: 'Състезателна математика', year: '2025', org: '', summary: 'Подготовка за състезания: комбинаторика, графи, теореми.', link: '#' },
       ],
     },
     projects: {
-      eyebrow: 'Projects',
-      title: 'Selected builds and experiments.',
-      cta: 'View project',
+      eyebrow: 'Проекти',
+      title: 'Избрани реализации и експерименти.',
+      cta: 'Виж проекта',
       items: [
         {
-          title: '????????? ?????',
+          title: 'Очаквайте скоро',
           stack: '',
-          summary: '????? ?? ?????? ??????? ???.',
+          summary: 'Скоро ще добавя проекти тук.',
           link: '#',
         },
       ],
     },
     papers: {
-      eyebrow: 'Paper / News',
-      title: 'Articles, talks, and appearances.',
-      cta: 'See more',
+      eyebrow: 'Статии / News',
+      title: 'Статии, участия и talks.',
+      cta: 'Виж повече',
       items: [
         {
-          title: '????????? ?????',
+          title: 'Очаквайте скоро',
           date: '',
           type: 'News',
-          summary: '????? ?? ?????? ?????? ? ??????? ???.',
+          summary: 'Скоро ще добавя статии и участия тук.',
           link: '#',
         },
       ],
+    },
+    contact: {
+      eyebrow: 'Контакт',
+      title: 'Свържи се с мен за проекти или курсове.',
+      sub: 'Пиши директно по имейл, LinkedIn или използвай формата по-долу. Отговарям възможно най-бързо.',
+      labels: {
+        phone: 'Телефон',
+        email: 'Email',
+        linkedin: 'LinkedIn',
+        github: 'GitHub',
+      },
+      form: {
+        name: 'Име',
+        email: 'Имейл',
+        message: 'Съобщение',
+        namePh: 'Твоето име',
+        emailPh: 'you@example.com',
+        messagePh: 'Как мога да помогна?',
+        submit: 'Изпрати',
+        download: 'Download CV',
+      },
+    },
+    home: {
+      eyebrow: 'Разгледай',
+      browse: 'Към детайлните страници',
+      links: {
+        experience: 'Опит',
+        education: 'Образование',
+        courses: 'Курсове',
+        projects: 'Проекти',
+        papers: 'Статии / News',
+        contact: 'Контакт',
+      },
     },
   },
   en: {
@@ -188,7 +220,7 @@ export const strings = {
       hello: "Hello, I'm",
       title: 'Dimitar Stefanov Ivanov',
       lead:
-        'Software engineer building reliable .NET APIs, optimizing SQL, and automating data and reporting. I work with real business processes and care about clear architecture.',
+        'Data Engineer & SQL database developer with experience in database design, performance tuning, and ETL/ELT pipelines. I build reliable .NET services, optimize SQL, automate data/reporting, and teach math and programming.',
       location: 'Sofia, Bulgaria',
       age: (years) => `${years} years`,
       buttons: {
@@ -304,13 +336,12 @@ export const strings = {
       title: 'Practical learning for developers and engineers.',
       cta: 'See details',
       items: [
-        {
-          title: 'Coming soon',
-          year: 'Soon',
-          org: '',
-          summary: 'Courses will be added here soon.',
-          link: '#',
-        },
+        { title: 'Java: from basics to advanced', year: '2025', org: '', summary: 'Java syntax, OOP, collections, concurrency, REST, ORM.', link: '#' },
+        { title: 'C#: from basics to advanced', year: '2025', org: '', summary: 'C# fundamentals, OOP, LINQ, async/await, .NET practices.', link: '#' },
+        { title: 'SQL: from basics to advanced', year: '2025', org: '', summary: 'SELECT, JOINs, indexes, window functions, optimization.', link: '#' },
+        { title: 'School mathematics', year: '2025', org: '', summary: 'Algebra, geometry, functions, and exam preparation.', link: '#' },
+        { title: 'Higher mathematics', year: '2025', org: '', summary: 'Linear algebra, calculus, probability, applied math.', link: '#' },
+        { title: 'Competitive mathematics', year: '2025', org: '', summary: 'Contest prep: combinatorics, graph theory, olympiad topics.', link: '#' },
       ],
     },
     projects: {
@@ -339,6 +370,39 @@ export const strings = {
           link: '#',
         },
       ],
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Get in touch for projects or courses.',
+      sub: 'Reach out via email, LinkedIn, or use the form below. I reply as quickly as possible.',
+      labels: {
+        phone: 'Phone',
+        email: 'Email',
+        linkedin: 'LinkedIn',
+        github: 'GitHub',
+      },
+      form: {
+        name: 'Name',
+        email: 'Email',
+        message: 'Message',
+        namePh: 'Your name',
+        emailPh: 'you@example.com',
+        messagePh: 'How can I help?',
+        submit: 'Send',
+        download: 'Download CV',
+      },
+    },
+    home: {
+      eyebrow: 'Browse',
+      browse: 'Go to detailed pages',
+      links: {
+        experience: 'Experience',
+        education: 'Education',
+        courses: 'Courses',
+        projects: 'Projects',
+        papers: 'Papers / News',
+        contact: 'Contact',
+      },
     },
   },
 };
