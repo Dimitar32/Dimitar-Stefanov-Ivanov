@@ -1,34 +1,38 @@
 import React from 'react';
 import styles from './Experience.module.css';
+import { useLang } from '../i18n/LanguageContext';
 
-function Experience() {
+const Experience = () => {
+  const { t } = useLang();
+  const roles = t('experience.items') || [];
+
   return (
     <section className={styles.experience} id="experience">
-      <h2>{'// Experience'}</h2>
-
-      <div className={styles.job}>
-        <h3>Database Developer <span>eDynamix Bulgaria Ltd</span></h3>
-        <p className={styles.date}>July 2023 – Present</p>
-        <ul>
-          <li>Designed, implemented and optimized complex SQL Server procedures and functions.</li>
-          <li>Created and optimized database tables, views and indexes.</li>
-          <li>Resolved performance issues and optimized queries.</li>
-          <li>Developed SSRS reports for data visualization.</li>
-          <li>Used Git for version control and collaboration.</li>
-        </ul>
+      <div className={styles.header}>
+        <h2 className={styles.eyebrow}>{t('experience.eyebrow')}</h2>
+        {/* <h2>{t('experience.title')}</h2> */}
       </div>
 
-      <div className={styles.job}>
-        <h3>Intern Java Developer <span>Infinno LLC</span></h3>
-        <p className={styles.date}>July 2022 – November 2022</p>
-        <ul>
-          <li>Applied OOP, data structures, and algorithms in Java.</li>
-          <li>Integrated JDBC for secure database connections.</li>
-          <li>Built and optimized SQL queries for MySQL.</li>
-        </ul>
+      <div className={styles.list}>
+        {roles.map((role) => (
+          <div className={styles.item} key={role.title + role.company + role.period}>
+            <div className={styles.top}>
+              <div>
+                <h3>{role.title}</h3>
+                <p className={styles.company}>{role.company}</p>
+              </div>
+              <span className={styles.period}>{role.period}</span>
+            </div>
+            <ul>
+              {role.bullets.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
-}
+};
 
 export default Experience;

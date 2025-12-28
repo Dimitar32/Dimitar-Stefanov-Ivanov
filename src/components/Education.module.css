@@ -1,31 +1,147 @@
 .education {
-    background-color: #252526;
-    color: #d4d4d4;
-    padding: 40px 30px;
-    font-family: 'Fira Code', monospace;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.7rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fdfdff;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.logoImg {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.topRow h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.period {
+  color: #475569;
+  font-weight: 600;
+  background: #eef2ff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.degree {
+  margin: 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.activities,
+.extra {
+  margin: 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.skills span {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .card {
+    grid-template-columns: 1fr;
   }
-  
-  h2 {
-    color: #6a9955;
-    margin-bottom: 20px;
+
+  .logo {
+    width: 60px;
+    height: 60px;
   }
-  
-  .entry {
-    margin-bottom: 25px;
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  h3 {
-    color: #9cdcfe;
-    font-size: 1.2rem;
-  }
-  
-  .subtitle {
-    font-size: 0.95rem;
-    color: #c586c0;
-  }
-  
-  .date {
-    font-size: 0.9rem;
-    color: #808080;
-    margin-bottom: 10px;
-  }
+}

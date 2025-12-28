@@ -1,4 +1,4 @@
-.experience {
+.projects {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 18px;
@@ -30,61 +30,47 @@
   font-size: 1.7rem;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
-.item {
+.card {
   border: 1px solid #e5e7eb;
   border-radius: 14px;
   padding: 16px;
   background: #fdfdff;
-}
-
-.top {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .top h3 {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #111827;
 }
 
-.company {
+.stack {
   margin: 4px 0 0;
-  color: #2563eb;
-  font-weight: 700;
-}
-
-.period {
   color: #475569;
   font-weight: 600;
-  background: #eef2ff;
-  padding: 6px 10px;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
-ul {
-  margin: 12px 0 0;
-  padding-left: 18px;
+.summary {
+  margin: 0;
   color: #334155;
   line-height: 1.5;
 }
 
-li {
-  margin-bottom: 8px;
+.link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-@media (max-width: 640px) {
-  .top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.link:hover {
+  text-decoration: underline;
 }

@@ -1,21 +1,91 @@
 .courses {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    padding: 40px 30px;
-    font-family: 'Fira Code', monospace;
-  }
-  
-  h2 {
-    color: #6a9955;
-    margin-bottom: 20px;
-  }
-  
-  .list {
-    list-style: square;
-    padding-left: 20px;
-  }
-  
-  .courseTitle {
-    color: #dcdcaa;
-  }
-  
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.7rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fdfdff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.top h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.year {
+  color: #475569;
+  font-weight: 600;
+  background: #eef2ff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.org {
+  margin: 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.summary {
+  margin: 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

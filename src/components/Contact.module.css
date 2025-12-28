@@ -1,47 +1,168 @@
 .contact {
-    background-color: #252526;
-    color: #d4d4d4;
-    padding: 40px 30px;
-    font-family: 'Fira Code', monospace;
-  }
-  
-  h2 {
-    color: #6a9955;
-    margin-bottom: 20px;
-  }
-  
-  .success {
-    color: #b5cea8;
-    margin-bottom: 15px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-  }
-  
-  input,
-  textarea {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    border: 1px solid #3c3c3c;
-    padding: 10px;
-    font-family: 'Fira Code', monospace;
-  }
-  
-  button {
-    background-color: #0e639c;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Fira Code', monospace;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #1177bb;
-  }
-  
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.7rem;
+}
+
+.sub {
+  margin: 0;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fdfdff;
+  min-height: 96px;
+}
+
+.label {
+  margin: 0 0 4px;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 700;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  display: block;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.fieldGroup label {
+  font-weight: 700;
+  color: #1f2933;
+}
+
+.fieldGroup input,
+.fieldGroup textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce2f5;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111827;
+  background: #f8f9ff;
+  transition: border 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.fieldGroup input:focus,
+.fieldGroup textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+  background: #fff;
+}
+
+.fieldGroup input::placeholder,
+.fieldGroup textarea::placeholder {
+  color: #9aa3b5;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  justify-content: flex-start;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+}
+
+.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+}
+
+.secondary {
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #d4d4f5;
+}
+
+.secondary:hover {
+  background: #e0e7ff;
+  transform: translateY(-1px);
+}
